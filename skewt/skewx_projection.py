@@ -59,7 +59,7 @@ class SkewXAxis(maxis.XAxis):
         self.upper_interval = 0.0, 1.0
 
     def _get_tick(self, major):
-        return SkewXTick(self.axes, 0, '', major=major)
+        return SkewXTick(self.axes, None, major=major)
 
     @property
     def lower_interval(self):
